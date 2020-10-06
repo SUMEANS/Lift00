@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <string.h>
-#include <process.h>
-#include <stdlib.h>
 
 int lines();
 void detect(int *move, int *bre, int len);
@@ -28,7 +26,7 @@ int main(void)
         printf("%d %c %d\n", move[i], shim, bre[i]);
         if (move[i] == 0 && bre[i] == 0)
         {
-            system("python smss.py");
+            printf("(긴급상황)거주자생사여부확인바람\n");
             break;
         }
     }
